@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Pivotal Parser",
+    "description": "Parses Pivotal Weather images",
+    "permissions": [
+        "downloads"
+    ],
+    "version": "0.9.1",
+    "icons":{
+        "16": "/images/16.png",
+        "48": "/images/48.png",
+        "128": "/images/128.png"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["main.js"]
+    }],
+    "action": {
+        "default_icon": "/images/16.png",
+        "default_popup": "popup.html",
+        "default_title": "Activate the parser in the popup"
+    }
+}
