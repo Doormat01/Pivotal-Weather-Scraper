@@ -67,26 +67,6 @@ function call(){
       downloadAll(urls)
   }
 
-// make a page where you can select what you want downloaded, using the submit button and overhaul the ui
-
-/* get this to work
-function closeCred(){
-  var credits = document.getElementById("cred");
-  credits.style.opacity = "0";
-  } */ 
-  
-/*     selection logic
- const checkboxes = document.querySelectorAll('input[type=checkbox]');
-      const checkedBoxes = [];
-
-      checkboxes.forEach((checkbox) => {
-        if (checkbox.checked) {
-          checkedBoxes.push(checkbox.name);
-        }
-      });
-
-      console.log(checkedBoxes);*/ 
-
   function openCred(){
   var cred = document.getElementById("credHelp")
   cred.innerHTML = "Credits to Dlan for the original code Discord id: 729510141195452466"
