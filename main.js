@@ -62,16 +62,77 @@ function call(){
           for (const {url, filename} of urls) {
             await download(url, filename);
           }
-        }
         
+        }
       downloadAll(urls)
+  }
+
+// make a page where you can select what you want downloaded, using the submit button and overhaul the ui
+
+/* get this to work
+function closeCred(){
+  var credits = document.getElementById("cred");
+  credits.style.opacity = "0";
+  } */ 
+  
+/*     selection logic
+ const checkboxes = document.querySelectorAll('input[type=checkbox]');
+      const checkedBoxes = [];
+
+      checkboxes.forEach((checkbox) => {
+        if (checkbox.checked) {
+          checkedBoxes.push(checkbox.name);
+        }
+      });
+
+      console.log(checkedBoxes);*/ 
+
+  function openCred(){
+  var cred = document.getElementById("credHelp")
+  cred.innerHTML = "Credits to Dlan for the original code Discord id: 729510141195452466"
+  }
+
+  function openHelp(){
+    var help = document.getElementById("credHelp")
+    help.innerHTML = "For comments and questions please contact 891072704990568483 (Discord ID)"
+  }
+
+function openSelector(){
+  alert("This has not yet been implimented")
+//window.open("selector.html")
 }
 
+//onclick logic
 document.addEventListener('DOMContentLoaded', function() {
-    var link = document.getElementById('button');
-    // onClick's logic below:
-    link.addEventListener('click', function() {
-        call();
-    });
+  var link = document.getElementById('button');
+  link.addEventListener('click', function() {
+    call();
+  });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var link = document.getElementById('credits'); // for the credits button
+  // onClick's logic below:
+  link.addEventListener('click', function() {
+      openCred();
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var link = document.getElementById('select'); // for the selection button
+  // onClick's logic below:
+  link.addEventListener('click', function() {
+      openSelector();
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var link = document.getElementById('help'); // for the selection button
+  // onClick's logic below:
+  link.addEventListener('click', function() {
+      openHelp();
+  });
+});
+
+
 

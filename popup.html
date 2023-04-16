@@ -2,39 +2,47 @@
 <script src="main.js"></script>
 
 <body>
-    <h3>Click the button below the activate the parser and start downloading.</h3>
+    <h3 id="howToUse">Click the button below the activate the parser and start downloading.</h3>
         <a id="button">Start Parsing</a>
     <h3 id="warning">THIS IS IN ALPHA TESTING EXPECT LOTS OF BUGS</h3>
-    <h3>Credits to Dlan for the original code
-        Discord id: 729510141195452466
-    </h3>
-    <h4>For comments and questions please contact 891072704990568483 (Discord ID)</h4>
+    <a id="credits">Credits</a> <a id="select">Image Selection</a>
+    <a id="help">Help</a>
+    <h3 id="credHelp"></h3>
 </body>
 <style>
+    #credits{
+        border-radius: 4px;
+        background-color: rgb(88, 88, 88);
+        color: white;
+        font-family: Arial, monospace;
+        cursor: pointer;
+        font-weight: bold;
+    }
     #warning{
         color: orange;
         font-family: Arial, monospace;
         font-weight: bold;
     }
     a{
-        border-radius: 2rem;
-        background-color: rgb(116, 116, 116);
+        border-radius: 4px;
+        background-color: rgb(88, 88, 88);
         color: white;
         font-family: Arial, monospace;
         cursor: pointer;
         font-weight: bold;
     }
-    h3{
-        color: white;
+    #credHelp{
+        color: rgb(131, 131, 131);
         font-family: Arial, monospace;
     }
     body{
-        background-color: rgb(71, 71, 71);
+        background-color: rgb(29, 29, 29);
         width: 175px;
     }
-    h4{
-        color: white;
+    h4, #howToUse{
+        color: rgb(131, 131, 131);
         font-family: Arial, monospace;
+        
     }
 </style>
 </html>
